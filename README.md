@@ -18,44 +18,62 @@ All models are trained and evaluated using the same preprocessing and label enco
 
 # Dataset
 Hinglish-TOP Dataset
+
 64 Intent Classes
+
 ~10,896 total samples
+
 Code-mixed Hindi-English (Roman script)
 
 Fields used:
+
 cs_query → Input text
+
 cs_parse → Intent extraction
 
 # Results Summary
 Model	Accuracy
+
 Logistic Regression	74.2%
-BiLSTM	~40%
-mBERT	77.5% (Best)
+BiLSTM	42%
+mBERT	80% (Best)
 XLM-R	71.8%
 
 mBERT achieved the highest performance due to contextual multilingual representation learning.
 
 # Technologies Used
 Python
+
 Scikit-learn
+
 PyTorch
+
 HuggingFace Transformers
+
 Gensim
+
 Pandas, NumPy
 
 # How to Run
 Install dependencies: pip install -r requirements.txt
+
 Place dataset files (train.tsv, validation.tsv, test.tsv) in project directory.
+
 Run: python main.py
 
 
 # Key Contributions
 Unified preprocessing and evaluation pipeline
+
 Comparative analysis across 4 modeling paradigms
+
 Evaluation on low-resource code-mixed dataset
+
 Insight into transformer effectiveness for Hinglish NLP
 
 # Future Work
 Data augmentation for code-mixed text
+
 Few-shot and zero-shot learning
+
 Attention visualization and explainability
