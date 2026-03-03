@@ -7,8 +7,11 @@ The task involves classifying Hinglish queries into 64 predefined intent categor
 
 # Models Implemented
 TF-IDF + Logistic Regression (Baseline)
+
 FastText + BiLSTM
+
 Multilingual BERT (mBERT)
+
 XLM-RoBERTa
 
 All models are trained and evaluated using the same preprocessing and label encoding framework to ensure fair comparison.
