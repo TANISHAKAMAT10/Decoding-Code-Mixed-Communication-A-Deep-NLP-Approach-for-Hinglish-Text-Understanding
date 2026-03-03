@@ -35,8 +35,11 @@ cs_parse → Intent extraction
 Model	Accuracy
 
 Logistic Regression	74.2%
+
 BiLSTM	42%
+
 mBERT	80% (Best)
+
 XLM-R	71.8%
 
 mBERT achieved the highest performance due to contextual multilingual representation learning.
